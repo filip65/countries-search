@@ -1,0 +1,88 @@
+.header {
+  padding-top: 30px;
+}
+
+.header form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header form input[type="text"] {
+  padding-left: 80px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.header form select {
+  margin-top: 30px;
+  width: 60%;
+  font-weight: 400;
+  padding: 0 30px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.header form select select {
+  background-color: var(--elements);
+}
+
+.header form input[type="text"],
+.header form select {
+  height: 50px;
+  background-color: var(--elements);
+  border: none;
+  border-radius: 10px;
+  color: var(--text);
+}
+
+.header form input[type="text"]::placeholder {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--text);
+}
+
+@media (min-width: 700px) {
+  .header {
+    margin: 0 80px;
+  }
+
+  .header form {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header form input[type="text"],
+  .header form select {
+    margin: 0;
+  }
+
+  .header form input[type="text"] {
+    max-width: 480px;
+  }
+
+  .input-container {
+    width: 100%;
+    max-width: 480px;
+    margin-right: 50px;
+  }
+
+  .header form select {
+    width: 200px;
+  }
+}

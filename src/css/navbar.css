@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  background-color: var(--elements);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  transition: 0.5s background-color;
+}
+
+.navbar h2 {
+  font-weight: 800;
+  color: white;
+  color: var(--text);
+}
+
+.theme-toggle {
+  display: flex;
+}
+
+.theme-toggle p {
+  padding-left: 10px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.moon-icon {
+  color: var(--text);
+}
+
+@media (min-width: 1000px) {
+  .navbar h2,
+  .theme-toggle p,
+  .moon-icon {
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 25px 80px;
+  }
+}
