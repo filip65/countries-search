@@ -36,7 +36,7 @@ function Header({ country, setCountry, setRegion }) {
           defaultValue=""
           onChange={regionSelect}
         >
-          <option value="africa" disabled hidden value="default">
+          <option disabled hidden value="default">
             Filter by region
           </option>
           <option value="">All</option>

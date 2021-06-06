@@ -12,7 +12,7 @@
 .header form input[type="text"] {
   padding-left: 80px;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .header form select {
@@ -20,7 +20,7 @@
   width: 60%;
   font-weight: 400;
   padding: 0 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -58,6 +58,7 @@
 @media (min-width: 700px) {
   .header {
     margin: 0 80px;
+    padding-top: 50px;
   }
 
   .header form {
@@ -84,5 +85,11 @@
 
   .header form select {
     width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 60px;
   }
 }
