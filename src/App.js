@@ -1,19 +1,24 @@
 import "./App.css";
-import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import List from "./components/List";
+
+import Home from "./pages/Home";
+import Detail from "./pages/Detail";
 
 function App() {
-  const [country, setCountry] = useState("");
-  const [region, setRegion] = useState("");
-
   return (
     <div className="App">
-      <Navbar />
-      <Header country={country} setCountry={setCountry} setRegion={setRegion} />
-      <List country={country} region={region} />
+      <Router>
+        <Navbar />
+
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/detail/:country" children={<Detail />}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

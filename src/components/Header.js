@@ -43,6 +43,7 @@ function Header({ country, setCountry, setRegion }) {
           <option value="africa">Africa</option>
           <option value="asia">Asia</option>
           <option value="europe">Europe</option>
+          <option value="americas">Americas</option>
           <option value="oceania">Oceania</option>
         </select>
       </form>

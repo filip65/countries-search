@@ -6,6 +6,10 @@
   gap: 50px;
 }
 
+.list > a {
+  text-decoration: none;
+}
+
 @media (min-width: 760px) {
   .list {
     grid-template-columns: 1fr 1fr;

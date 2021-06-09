@@ -13,13 +13,13 @@ function Card({ name, population, region, capital, flag }) {
       <div className="card-content">
         <h2>{name}</h2>
         <p>
-          <span>Population</span>: {population}
+          <span>Population</span>: {`${population ? population : "not found"}`}
         </p>
         <p>
-          <span>Region</span>: {region}
+          <span>Region</span>: {`${region ? region : "not found"}`}
         </p>
         <p>
-          <span>Capital</span>: {capital}
+          <span>Capital</span>: {`${capital ? capital : "not found"}`}
         </p>
       </div>
     </div>
