@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../components/Card";
 import useFetchCountries from "../useFetchCountries.js";
 import { Link } from "react-router-dom";
+import { WaveLoading } from "react-loadingg";
 
 import "../css/list.css";
 
@@ -9,12 +10,13 @@ function List({ country, region }) {
   const { countries, isLoading, isError } = useFetchCountries(country, region);
 
   if (isLoading) {
-    return <h2>Loading...</h2>;
+    return <WaveLoading />;
   }
 
   if (isError) {
-    return <h2>Error</h2>;
+    return <h1 className="error">Nothing found... 😰</h1>;
   }
+
   return (
     <div className="list">
       {countries.map((country, index) => {

@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/detail/:country" children={<Detail />}></Route>
+          <Route path="/detail/:countryName" children={<Detail />}></Route>
         </Switch>
       </Router>
     </div>

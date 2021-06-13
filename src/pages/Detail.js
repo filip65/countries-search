@@ -5,10 +5,11 @@ import "../css/detail.css";
 import { Link } from "react-router-dom";
 import { MdKeyboardBackspace } from "react-icons/md";
 import lookup from "country-code-lookup";
+import { WaveLoading } from "react-loadingg";
 
 const Detail = () => {
-  const { country } = useParams();
-  const { countries, isLoading, isError } = useFetchCountries(country);
+  const { countryName } = useParams();
+  const { countries, isLoading, isError } = useFetchCountries(countryName);
 
   //   const {
   //     name,
@@ -25,14 +26,12 @@ const Detail = () => {
   //chcel som takto ale neviem preco to takto neislo :(
 
   if (isLoading) {
-    return <h2>Loading...</h2>;
+    return <WaveLoading />;
   }
 
   if (isError) {
     return <h2>Error</h2>;
   }
-
-  console.log(countries[0].borders);
 
   return (
     <div className="detail">

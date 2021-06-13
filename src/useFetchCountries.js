@@ -7,46 +7,12 @@ function useFetchCountries(country, region) {
   const [isError, setIsError] = useState(false);
   //   nacitanie krajin ked sa zmeni coutry alebo region
 
-  // const url = `https://restcountries.eu/rest/v2/${
-  //   country ? `name/${country}` : "all"
-  // }`;
-  // // const url = `https://restcountries.eu/rest/v2/${
-  // //   country ? `name/${country}` : "all"
-  // // }${region ? `?region=${region}` : ""}`;
-
-  // const getCountries = useCallback(async () => {
-  //   setIsLoading(true);
-  //   axios
-  //     .get(`${url}`)
-  //     .then((data) => {
-  //       if (!region) {
-  //         setCountries(data.data);
-  //       } else {
-  //         setCountries((oldCountries) => {
-  //           return oldCountries.filter((item) => {
-  //             console.log(item.region);
-  //             return item.region === region;
-  //           });
-  //         });
-  //       }
-  //       setIsError(false);
-  //       setIsLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       setIsError(true);
-  //       setIsLoading(false);
-  //       console.log(error);
-  //     });
-  // }, [url, region]);
-
-  // useEffect(() => {
-  //   getCountries();
-  // }, [getCountries]);
-
   useEffect(() => {
     const url = `https://restcountries.eu/rest/v2/${
       country ? `name/${country}` : "all"
     }`;
+
+    setIsLoading(true);
 
     axios
       .get(url)

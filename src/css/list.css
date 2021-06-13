@@ -10,6 +10,13 @@
   text-decoration: none;
 }
 
+.error {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text);
+}
+
 @media (min-width: 760px) {
   .list {
     grid-template-columns: 1fr 1fr;
