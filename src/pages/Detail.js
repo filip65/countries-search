@@ -104,21 +104,23 @@ const Detail = () => {
             </p>
           </div>
         </div>
-      </div>
 
-      {countries[0].borders.length !== 0 && <h2>Border Countries:</h2>}
-      <div className="borders-container">
-        {countries[0].borders.map((border, index) => {
-          return (
-            <Link
-              to={`/detail/${lookup.byIso(border).country}`}
-              className="border"
-              key={index}
-            >
-              {lookup.byIso(border).country}
-            </Link>
-          );
-        })}
+        <div className="borders-container">
+          {countries[0].borders.length !== 0 && <h2>Border Countries:</h2>}
+          <div className="borders">
+            {countries[0].borders.map((border, index) => {
+              return (
+                <Link
+                  to={`/detail/${lookup.byIso(border).country}`}
+                  className="border"
+                  key={index}
+                >
+                  {lookup.byIso(border).country}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

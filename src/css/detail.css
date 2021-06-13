@@ -26,7 +26,8 @@
   font-weight: 400;
 }
 
-.detail .back-btn:hover {
+.detail .back-btn:hover,
+.detail a:hover {
   cursor: pointer;
   filter: brightness(0.9);
 }
@@ -72,7 +73,7 @@
   font-weight: 400;
 }
 
-.borders-container {
+.borders {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,5 +125,24 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 140px;
     align-items: center;
+    grid-template-areas:
+      "flag text-container"
+      "flag borders";
+  }
+
+  .text-section-container {
+    grid-area: text-container;
+  }
+
+  .borders {
+    grid-area: borders;
+  }
+
+  .detail .image {
+    grid-area: flag;
+  }
+
+  .borders-container {
+    grid-template-columns: auto 1fr;
   }
 }
