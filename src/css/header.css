@@ -1,11 +1,12 @@
 .header {
   padding-top: 30px;
+  width: 85%;
 }
 
 .header form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -57,7 +58,7 @@
 
 @media (min-width: 700px) {
   .header {
-    margin: 0 80px;
+    margin: 0 auto;
     padding-top: 50px;
   }
 

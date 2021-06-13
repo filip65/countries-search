@@ -13,7 +13,8 @@ function Card({ name, population, region, capital, flag }) {
       <div className="card-content">
         <h2>{name}</h2>
         <p>
-          <span>Population</span>: {`${population ? population : "not found"}`}
+          <span>Population</span>:{" "}
+          {`${population ? population.toLocaleString("en-US") : "not found"}`}
         </p>
         <p>
           <span>Region</span>: {`${region ? region : "not found"}`}

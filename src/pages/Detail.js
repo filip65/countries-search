@@ -59,7 +59,7 @@ const Detail = () => {
             </p>
             <p>
               <span>Population:</span>
-              {countries[0].population}
+              {countries[0].population.toLocaleString("en-US")}
             </p>
             <p>
               <span>Region:</span>

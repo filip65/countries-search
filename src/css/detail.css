@@ -140,6 +140,7 @@
 
   .detail .image {
     grid-area: flag;
+    height: 500px;
   }
 
   .borders-container {
