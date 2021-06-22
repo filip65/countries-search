@@ -88,6 +88,15 @@
   color: var(--text);
 }
 
+.error-msg {
+  font-size: 3rem;
+  color: var(--text);
+  display: inline-block;
+  margin-left: 50vw;
+  transform: translateX(-50%);
+  margin-top: 100px;
+}
+
 @media (min-width: 400px) {
   .detail .image {
     height: 250px;

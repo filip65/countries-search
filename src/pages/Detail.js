@@ -11,26 +11,12 @@ const Detail = () => {
   const { countryName } = useParams();
   const { countries, isLoading, isError } = useFetchCountries(countryName);
 
-  //   const {
-  //     name,
-  //     nativeName,
-  //     population,
-  //     region,
-  //     subregion,
-  //     capital,
-  //     topLevelDomain,
-  //     currencies,
-  //     languages,
-  //     borders,
-  //   } = countries[0];
-  //chcel som takto ale neviem preco to takto neislo :(
-
   if (isLoading) {
     return <WaveLoading />;
   }
 
   if (isError) {
-    return <h2>Error</h2>;
+    return <h2 className="error-msg">Bad country name!</h2>;
   }
 
   return (
