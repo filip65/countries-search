@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.theme-toggle:hover {
+  cursor: pointer;
+}
+
 .theme-toggle p {
   padding-left: 10px;
   font-weight: 400;

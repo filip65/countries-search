@@ -10,7 +10,7 @@
 }
 
 body[theme="light"] {
-  --background: hsl(0, 0%, 89%);
+  --background: hsl(0, 0%, 96%);
   --input: hsl(0, 0%, 52%);
   --text: hsl(200, 15%, 8%);
   --elements: hsl(0, 0%, 100%);

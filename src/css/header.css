@@ -25,6 +25,10 @@
   margin-bottom: 10px;
 }
 
+.header form select:hover {
+  cursor: pointer;
+}
+
 .header form select select {
   background-color: var(--elements);
 }
