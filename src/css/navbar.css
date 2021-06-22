@@ -16,6 +16,7 @@
 
 .theme-toggle {
   display: flex;
+  align-items: center;
 }
 
 .theme-toggle:hover {
